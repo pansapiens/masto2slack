@@ -42,6 +42,23 @@ Alternatively, run:
 to check for new posts every 5 mins (300 seconds).
 
 
+## Building from source
+
+You'll need [Go](https://go.dev/dl/) (v1.19+).
+
+```bash
+git clone https://github.com/pansapiens/masto2slack.git
+cd masto2slack
+
+# Test without building
+# (often slow the first time since dependencies will be downloaded)
+go run masto2slack.go
+
+# Build and run
+go build masto2slack.go
+./masto2slack
+```
+
 ## Ideas / TODO
 
 - Option to run in our own polling loop rather than require a cronjob
