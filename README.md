@@ -65,3 +65,4 @@ go build masto2slack.go
 - Use websockets so we don't need to poll
 - Better logging and a `--verbose` commandline option
 - Better Slack post formatting (eg media posts in Slack message 'blocks' ?)
+  - Option to just post the URL to the toot and [unfurl](https://api.slack.com/reference/messaging/link-unfurling) in Slack (seems this requires a proper chat bot not just a webhook) ?  
